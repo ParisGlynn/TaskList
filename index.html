@@ -3,11 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css">
   <title>Task List</title>
 </head>
 <body>
-  
+  <div class="container">
+    <h1>task list</h1>
+    <form id="add-task" class="add-task">
+      <input type="text" id = 'task-input' placeholder = 'Add Task...'>
+      <input type="submit" value="Add Task" id = 'addTaskBtn' class = 'Btn'>
+    </form>
+
+    <ul class="tasks" id="tasks">
+      <li>First task<i class = 'fas fa-times'></i></li>
+      <li>Second Task<i class = 'fas fa-times'></i></li>
+    </ul>
+
+    <button class="btn">Clear Tasks</button>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
