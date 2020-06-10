@@ -12,13 +12,19 @@
     <h1>task list</h1>
     <form id="add-task" class="add-task">
       <input type="text" id = 'task-input' placeholder = 'Add Task...'>
-      <input type="submit" value="Add Task" id = 'addTaskBtn' class = 'Btn'>
+      <input type="submit" value="Add Task" id = 'addTaskBtn' class = 'btn'>
     </form>
 
-    <ul class="tasks" id="tasks">
-      <li>First task<i class = 'fas fa-times'></i></li>
-      <li>Second Task<i class = 'fas fa-times'></i></li>
-    </ul>
+    <div class="tasks" id="tasks">
+      <div class = 'task'>
+        <span class = 'taskText'>First task</span>
+        <i class = 'fas fa-times'></i>
+      </div>
+      <div class = 'task'>
+        <span class = 'taskText'>First task</span>
+        <i class = 'fas fa-times'></i>
+      </div>
+    </div>
 
     <button class="btn">Clear Tasks</button>
   </div>

@@ -1,0 +1,107 @@
+:root {
+  --primary-color: #a7d3a7;
+  --secondary-color: #68d168;
+}
+
+/* Default styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--primary-color);
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container */
+
+.container {
+  position: relative;
+  max-width: 600px;
+  margin: 40px auto 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #888;
+}
+
+.container h1 {
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 5px;
+  text-shadow: 3px 3px 5px #333;
+}
+
+/* Form */
+
+.add-task {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.add-task input[type = 'text'] {
+  border: none;
+  padding: 7px;
+  width: 100%;
+  margin-right: 5px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+
+.add-task input[type = 'text']:focus, .btn {
+  outline: none;
+}
+
+/* Buttons */
+
+.btn {
+  background: var(--primary-color);
+  padding: 7px;
+  border: none;
+  color: #000;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+button {
+  position: absolute;
+  top: 45px;
+  left: 20px;
+}
+
+/* Task List */
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  font-size: 1.3rem;
+  color: #fff;
+  margin-top: 40px;
+  width: 550px;
+}
+
+.tasks .task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+  background: #1f630a;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+
+.tasks li i {
+  color: #ff0000;
+}
