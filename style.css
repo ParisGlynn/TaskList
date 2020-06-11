@@ -19,7 +19,7 @@ body {
 .container {
   position: relative;
   max-width: 600px;
-  margin: 40px auto 0;
+  margin: 40px auto 20px;
   padding: 20px;
   display: flex;
   flex-direction: column;
